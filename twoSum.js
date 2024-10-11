@@ -16,14 +16,14 @@
 // Output: [0,1]
 
 const twoSum = (nums, target) => {
-  let map = new Map();
-  for (let i = 0; i < nums.length; i++) {
-    let nums1 = nums[i] // get all the numbers on the array
-    let nums2 = target - nums1 
-    if (map.has(nums2)) {
-      return [i, map.get(nums2)] // breaks down the for loop after getting the target result
+  let map = new Map(); // Initialize the Map to store numbers and their indices
+  for (let i = 0; i < nums.length; i++) { // Iterate through each number
+    let nums1 = nums[i] // Current number
+    let nums2 = target - nums1  // Complement needed to reach target
+    if (map.has(nums2)) { // Check if the complement exists in the Map
+      return [i, map.get(nums2)] // // Return the current index and index of complement
     }
-    map.set(nums1, i)
+    map.set(nums1, i) // Store the current number with its index in the Map
   }
 };
 
