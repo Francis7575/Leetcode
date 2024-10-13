@@ -64,5 +64,5 @@ const romanToInt = function (s) {
 const result = romanToInt("XL")
 console.log(result)
 
-// Time Complexity: 𝑂(𝑛) because you process each character of the string once.
+// Time Complexity: 𝑂(𝑛) because each character of the string once.
 // Space Complexity: 𝑂(1) only use a fixed amount of additional space for the variables, regardless of the input size.
