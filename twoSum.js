@@ -31,3 +31,9 @@ const twoSum = (nums, target) => {
 // and 8 + 2 = 10 which matches the target's value
 const result = twoSum([1, 3, 3, 5, 8, 4, 3, 2, 5], 10)
 console.log(result)
+
+// Time complexity:
+// the time complexity is O(n) for iterating through the array and performing constant-time operations with the Map.
+
+// Space complexity:
+// The space complexity is linear, O(n), as the Map may need to accommodate up to n distinct numbers based on the input array.

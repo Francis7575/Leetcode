@@ -41,3 +41,9 @@ console.log(result)
 // Third iteration:
 // reversed = 12 * 10 + 1 % 10 = 121
 // current = Math.floor(1 / 10) = 0 
+
+// Time complexity:
+// Time Complexity: O(n), where n is the number of digits in x.
+
+// Space complexity:
+// Space Complexity: O(1), as it uses a constant amount of space.
