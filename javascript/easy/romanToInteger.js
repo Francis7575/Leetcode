@@ -31,7 +31,7 @@
 // Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 
 const romanToInt = function (s) {
-  let sum = 0;
+  let sum = 0;  
   for (let i = 0; i < s.length; i++) {
     let prev = s[i - 1];
     switch (s[i]) {
