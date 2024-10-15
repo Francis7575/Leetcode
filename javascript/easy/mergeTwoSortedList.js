@@ -26,24 +26,24 @@ function mergeTwoLists(list1, list2) {
   let current = dummy;
   // Iterate through both lists
   while (list1 && list2) {
-    if (list1.val <= list2.val) {
-      current.next = list1; // Attach the smaller node from list1
-      list1 = list1.next; // Move to the next node in list1
+    if (list1.val < list2.val) {
+      current.next = list1;
+      list1 = list1.next;
     } else {
-      current.next = list2; // Attach the smaller node from list2
-      list2 = list2.next; // Move to the next node in list2
+      current.next = list2;
+      list2 = list2.next;
     }
     current = current.next;
   }
 
-  // append the remaining nodes
-  if (list1 !== null) {
+  if (list1) {
     current.next = list1;
-  } else if (list2 !== null) {
+  }
+
+  if (list2) {
     current.next = list2;
   }
 
-  // The merged list starts from the node next to dummy
   return dummy.next;
 }
 
