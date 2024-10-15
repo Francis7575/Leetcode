@@ -26,16 +26,17 @@ function mergeTwoLists(list1, list2) {
   let current = dummy;
   // Iterate through both lists
   while (list1 && list2) {
-    if (list1.val < list2.val) {
-      current.next = list1;
-      list1 = list1.next;
+    if (list1.val <= list2.val) {
+      current.next = list1; // adds the smaller node from list1 to the result list.
+      list1 = list1.next;  // advance the pointer of list1 to the next node,
     } else {
-      current.next = list2;
-      list2 = list2.next;
+      current.next = list2; // adds the smaller node from list2 to the result list.
+      list2 = list2.next;  // advance the pointer of list2 to the next node,
     }
     current = current.next;
   }
 
+  // append remaining nodes
   if (list1) {
     current.next = list1;
   }
