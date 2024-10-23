@@ -18,7 +18,7 @@ class Solution:
 prices = [7,1,5,3,10,4]
 
 solution = Solution()
-max_profit = solution.maxProfit(prices) # Rotate the array in place
+max_profit = solution.maxProfit(prices) 
 print("Max profit:", max_profit)  # Print the result
 
 # Time: O(n) because it just a loop through the array once.  
