@@ -10,7 +10,7 @@ class Solution:
 
         while i < n -1:
             #look where to buy
-            while i < n - 1 and prices[i] > prices[i + 1]:
+            while i < n - 1 and prices[i] > prices[i + 1]: #prices[i] = left number, prices[i + 1] right nuber
                 i += 1
             low = prices[i]
 
